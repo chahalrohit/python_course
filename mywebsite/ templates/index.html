@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Webpage</title>
+</head>
+<body>
+<h1>I am coming from html</h1>
+{{key}}
+<a href="{% url 'result' %}">Click here for result</a>
+<br></br>
+<form action="{% url 'result' %}">
+    {% csrf_token %}
+
+    <textarea cols="40" rows="20" name="article" ></textarea>
+    <br></br>
+    <input type="submit" name="Submit" />
+</form>
+</body>
+</html>
